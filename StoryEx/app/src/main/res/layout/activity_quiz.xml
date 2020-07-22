@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="#96fab3"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/txtTotalQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Questions: 1 / 10"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:textSize="22sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 1"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/txtCorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct : 0"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/txtWrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wrong : 0"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/txtTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:30"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/quesstion_container_background"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:text="Dino code academy is a great place to learn coding ?"
+            android:padding="10dp"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons_background"
+                android:layout_weight="1"
+                android:text="operating System"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:padding="12sp"
+                android:layout_marginTop="10dp"
+                android:button="@null"
+                android:freezesText="true"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons_background"
+                android:layout_weight="1"
+                android:text="Android os"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:padding="12sp"
+                android:layout_marginTop="10dp"
+                android:button="@null"
+                android:freezesText="true"/>
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons_background"
+                android:layout_weight="1"
+                android:text="Bluebery phi"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:padding="12sp"
+                android:layout_marginTop="10dp"
+                android:button="@null"
+                android:freezesText="true"/>
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons_background"
+                android:layout_weight="1"
+                android:text="Microcontroller"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:padding="12sp"
+                android:layout_marginTop="10dp"
+                android:button="@null"
+                android:freezesText="true"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnComfirm"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/confimr_button_background"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
